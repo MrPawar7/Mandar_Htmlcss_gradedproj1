@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Lab Test Details</title>
+    <link rel="stylesheet" href="labtest.css">
+</head>
+
+<body>
+    <header>
+        <h1> Lab Test Details </h1>
+    </header>
+    <section class="two-column">
+        <div class="formcontainer">
+            <form action="">
+                <article>
+                    <h3>1. Your Contact Details</h3>
+                    <input type="text" title="fullname" placeholder="Full Name" required spellcheck="true">
+                    <input type="text" title="patientid" placeholder="Patient ID">
+                    <br><br>
+                    <input type="number" title="contactno" min="6000000000" max="9999999999"
+                        placeholder="Contact Number" required spellcheck="true">
+                    <input type="email" title="emailid" placeholder="Email Id" required>
+                </article>
+                <article>
+                    <h3>2. Address</h3>
+                    <input type="text" title="houseno" placeholder="House Number" required>
+                    <input type="text" title="street" placeholder="Street" required>
+                    <br>
+                    <br>
+                    <input type="text" title="area" placeholder="Area" required>
+                    <input type="text" title="District" placeholder="Email Id" required>
+                    <br>
+                    <h5>District</h5>
+                    <select name="District" id="district" required>
+                        <option value="">Choose</option>
+                        <option value="Bangalore Urban">Bangalore</option>
+                        <option value="Bangalore Rural">Chennai</option>
+                        <option value="Ramnagar">Chengelpet</option>
+                    </select>
+                </article>
+                <article>
+                    <h3>3. Test Type</h3>
+                    <p>Check atleast one box without fail</p>
+                    <input type="checkbox" id="c1" name="option1" value="CBC">
+                    <label for="c1">CBC</label>
+                    <br>
+                    <input type="checkbox" id="c2" name="option2" value="Complete Urine">
+                    <label for="c2">Complete Urine</label>
+                    <br>
+                    <input type="checkbox" id="c3" name="option3" value="Lipid Profile">
+                    <label for="c3">Lipid Profile</label>
+                    <br>
+                    <input type="checkbox" id="c4" name="option4" value="Thyroid Stimulating Hormone(TSH)">
+                    <label for="c4">Thyroid Stimulating Hormone(TSH)</label>
+                    <br>
+                    <input type="checkbox" id="c4" name="option4" value="Glucose Test">
+                    <label for="c4">Glucose Test</label>
+                </article>
+                <article>
+                    <h3>4. Do you want hard copy of the result</h3>
+                    <input type="radio" id="c5" name="option" value="Yes" required>
+                    <label for="c5">Yes</label>
+                    <br>
+                    <input type="radio" id="c6" name="option" value="No">
+                    <label for="c6">No</label>
+                </article>
+                <article>
+                    <h3>Select your comfortable Date and Time</h3>
+                    <label for="c1">Date and time </label>
+                    <input type="datetime-local" id="datetime" name="datetime">
+                </article>
+                <button>Reset</button>
+                <button>Submit</button>
+            </form>
+        </div>
+        <div class="imagecontainer">
+            <img src="images\Lab-Test\lab-test.jpg" alt="">
+        </div>
+    </section>
+    <section>
+
+        <footer>
+            <h5>@Copyright. Only for demonstration purposes</h5>
+        </footer>
+    </section>
+</body>
+
+</html>
